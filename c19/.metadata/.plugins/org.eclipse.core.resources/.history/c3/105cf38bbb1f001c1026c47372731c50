@@ -1,0 +1,10 @@
+package pessoa;
+
+import java.sql.Date;
+
+public interface PessoaInterface {
+	
+	public void setNome(String Nome);
+	public String getNOme();
+
+}

@@ -1,0 +1,67 @@
+package endereco;
+
+import pessoa.Pessoa;
+
+public class Endereco implements EnderecoInterface {
+	
+	private String Logradouro;
+	private String Cidade;
+	private String Estado;
+	private String Pais;
+	private char UF;
+	private int Numero;
+	private int Quadra;
+	
+	
+	@Override
+	public String getLogradouro() {
+		return Logradouro;
+	}
+	
+	@Override
+	public void setLogradouro(String logradouro) {
+		Logradouro = logradouro;
+	}
+	@Override
+	public String getCidade() {
+		return Cidade;
+	}
+	
+	@Override
+	public void setCidade(String cidade) {
+		Cidade = cidade;
+	}
+	public String getEstado() {
+		return Estado;
+	}
+	public void setEstado(String estado) {
+		Estado = estado;
+	}
+	public String getPais() {
+		return Pais;
+	}
+	public void setPais(String pais) {
+		Pais = pais;
+	}
+	public char getUF() {
+		return UF;
+	}
+	public void setUF(char uF) {
+		UF = uF;
+	}
+	public int getNumero() {
+		return Numero;
+	}
+	public void setNumero(int numero) {
+		Numero = numero;
+	}
+	public int getQuadra() {
+		return Quadra;
+	}
+	public void setQuadra(int quadra) {
+		Quadra = quadra;
+	}
+	
+	
+
+}

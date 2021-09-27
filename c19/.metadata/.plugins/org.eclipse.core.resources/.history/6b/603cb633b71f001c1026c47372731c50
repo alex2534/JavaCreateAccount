@@ -1,0 +1,20 @@
+package endereco;
+
+public interface EnderecoInterface {
+	
+	public void setLogradouro ();
+	public String getLograduouro();
+	public void setCidade();
+	public String getCidade();
+	public void setEstado();
+	public String getEstado();
+	public void setPais();
+	public String getPais();
+	public void setUF();
+	public char getUF();
+	public void setNumero();
+	public int getNumero();
+	public void setQudra();
+	public int getQuadra();
+
+}

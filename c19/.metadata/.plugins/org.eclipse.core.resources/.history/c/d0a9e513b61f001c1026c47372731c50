@@ -1,0 +1,63 @@
+package endereco;
+
+import pessoa.Pessoa;
+
+public class Endereco implements EnderecoInterface {
+	
+	private String Logradouro;
+	private String Cidade;
+	private String Estado;
+	private String Pais;
+	private char UF;
+	private int Numero;
+	private int Quadra;
+	
+
+	private void setLogradouro (String Logradouro) {
+		this.Logradouro = Logradouro;
+	};
+	private String getLograduouro() {
+		return Logradouro;
+	};
+	
+	private void setCidade(String Cidade) {
+		this.Cidade = Cidade;
+	};	
+	private String getCidade() {
+		return Cidade;
+	};
+	
+	private void setEstado(String Estado) {
+		this.Estado = Estado;
+	};
+	private String getEstado() {
+		return Estado;
+	};
+	
+	private void setPais(String Pais) {
+		this.Pais = Pais;
+	};
+	private String getPais() {
+		return Pais;
+	};
+	private void setUF(char UF) {
+		this.UF = UF;
+	};
+	private char getUF() {
+		return UF;
+	};
+	
+	private void setNumero (int Numero) {
+		this.Numero = Numero;
+	};
+	private int getNumero() {
+		return Numero;
+	};
+	
+	private void setQudra(int Quadra) {
+		this.Quadra = Quadra;
+	};
+	private int getQuadra() {
+		return Quadra;
+	};
+}

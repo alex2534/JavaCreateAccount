@@ -1,0 +1,16 @@
+package pessoa;
+
+import java.sql.Date;
+
+public interface PessoaInterface {
+	
+	String setNome(String Nome);
+	String getNome() ;
+	String setSobreNome(String SobreNome);
+	public String getSobreNome();
+	String setCPF(String CPF);
+	public int getCPF();
+	Date setDataNascimento(Date DataNascimento);
+	public Date getDateNascimento();
+
+}

@@ -1,0 +1,14 @@
+package account;
+
+public interface AccountInterface {
+
+	private void  setNome() {};
+	private String getName() {};
+	private void setSobreNome() {};
+	private String getSobreNome() {};
+	private void setCPF() {};
+	private int setGet() {};
+	private void setDataNascimento() {};
+	private Date getDateNascimento() {};
+	
+}

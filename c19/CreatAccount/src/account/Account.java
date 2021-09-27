@@ -1,0 +1,24 @@
+package account;
+import java.util.Scanner;
+
+import endereco.Endereco;
+import  pessoa.Pessoa;
+
+public class Account {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		Endereco endereco = new Endereco();
+		Pessoa pessoa = new Pessoa();
+		
+	
+		
+		endereco.setLogradouro(entrada.nextLine());
+
+		
+		
+	}
+	
+}

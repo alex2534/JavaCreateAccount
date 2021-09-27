@@ -1,0 +1,62 @@
+package pessoa;
+import  endereco.Endereco;
+import javax.xml.crypto.Data;
+
+
+
+
+public class Pessoa implements PessoaInterface {
+	
+	private Endereco endereco;
+	private String nome;
+	private String SobreNome;
+	private String CPF;
+	private Data dataDeNascimento;
+	
+	public Pessoa () {
+		endereco = new Endereco();
+	};
+		
+	
+	public void  setNome(String nome) {
+		this.nome = nome;
+	};
+	public String getName() {
+		return nome;
+	};
+	
+	public void setSobreNome(String sobrenome) {
+		this.SobreNome = sobrenome;
+	};
+	public String getSobreNome() {
+		return SobreNome;
+	};
+	
+	public void setCPF(String CPF) {
+		this.CPF = CPF;
+	};
+	public String getCPF() {
+		return CPF;
+	};
+	public void setDataNascimento(Data date) {
+		this.dataDeNascimento = date;
+	};
+	public Date getDateNascimento() {
+		return dataDeNascimento;
+	}
+
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	};
+	
+	
+	
+
+
+}

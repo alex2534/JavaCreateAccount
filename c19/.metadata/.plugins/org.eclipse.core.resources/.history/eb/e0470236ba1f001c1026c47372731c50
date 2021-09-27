@@ -1,0 +1,57 @@
+package pessoa;
+import  endereco.Endereco;
+
+import java.sql.Date;
+
+
+
+
+public class Pessoa implements PessoaInterface {
+	
+	private Endereco endereco;
+	
+	private String Nome;
+	private String SobreNome;
+	private String CPF;
+	private Date dataDeNascimento;
+
+
+		
+	
+	@Override
+	public String getNome() {
+		return Nome;
+	}
+	@Override
+	public void setNome(String Nome) {
+		this.Nome = Nome;
+	}
+	@Override
+	public String getSobreNome() {
+		return SobreNome;
+	}
+	@Override
+	public void setSobreNome(String SobreNome) {
+		SobreNome = sobreNome;
+	}
+	@Override
+	public String getCPF() {
+		return CPF;
+	}
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+	public Date getDataDeNascimento() {
+		return dataDeNascimento;
+	}
+	public void setDataDeNascimento(Date dataDeNascimento) {
+		this.dataDeNascimento = dataDeNascimento;
+	}
+	
+
+
+	
+	
+
+
+}
