@@ -2,6 +2,8 @@ package pessoa;
 
 import java.sql.Date;
 
+import endereco.Endereco;
+
 public interface PessoaInterface {
 	
 	public void setNome(String Nome);
@@ -15,6 +17,9 @@ public interface PessoaInterface {
 	
 	public void setDataNascimento(Date DataNascimento);
 	public Date getDataNascimento();
+	
+	public void setEndereco(Endereco enderco);
+	public Endereco getEndereco();
 
 	
 }

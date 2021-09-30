@@ -1,0 +1,5 @@
+package cpfVerifica;
+
+public class ValidaCPF {
+
+}

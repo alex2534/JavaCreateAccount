@@ -1,0 +1,17 @@
+package dao;
+
+import java.util.List;
+
+import account.Account;
+
+public interface DaoInterface {
+	
+	public void adicionarNome(Nome nome);
+	public Nome getNome(String Nome);
+	
+	public void removeNome(String nome);
+	public void atualizarNome(Nome nome);
+	
+	public List<Account> getTodosNomes();
+
+}

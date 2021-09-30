@@ -11,7 +11,7 @@ public interface EnderecoInterface {
 	void setPais(String Pais);
 	public String getPais();
 	void setUF(char UF);
-	public char getUF();
+	public String getUF();
 	void setNumero(int Numero);
 	public int getNumero();
 	void setQuadra(int Quadra);

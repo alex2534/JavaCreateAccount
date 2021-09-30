@@ -1,0 +1,22 @@
+package account;
+import java.util.Scanner;
+
+import endereco.Endereco;
+import  pessoa.Pessoa;
+
+public class Account {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		Pessoa pessoa = new Pessoa();
+		
+		pessoa.getEndereco().setLogradouro("Rua");
+		System.out.print(pessoa.getEndereco().getLogradouro());
+
+		
+		
+	}
+	
+}

@@ -8,7 +8,7 @@ public class Endereco implements EnderecoInterface {
 	private String Cidade;
 	private String Estado;
 	private String Pais;
-	private char UF;
+	private String UF;
 	private int Numero;
 	private int Quadra;
 	
@@ -46,11 +46,10 @@ public class Endereco implements EnderecoInterface {
 		Pais = pais;
 	}
 	@Override
-	public char getUF() {
+	public String getUF() {
 		return UF;
 	}
-	@Override
-	public void setUF(char uF) {
+	public void setUF(String uF) {
 		UF = uF;
 	}
 	@Override
@@ -61,7 +60,7 @@ public class Endereco implements EnderecoInterface {
 	public void setNumero(int numero) {
 		Numero = numero;
 	}
-	@Override
+
 	public int getQuadra() {
 		return Quadra;
 	}
@@ -70,6 +69,13 @@ public class Endereco implements EnderecoInterface {
 	public void setQuadra(int quadra) {
 		Quadra = quadra;
 	}
+
+	@Override
+	public void setUF(char UF) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 	
 

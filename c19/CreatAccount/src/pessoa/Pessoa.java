@@ -1,7 +1,7 @@
 package pessoa;
-import  endereco.Endereco;
+import java.util.Date;
 
-import java.sql.Date;
+import  endereco.Endereco;
 
 
 
@@ -18,6 +18,15 @@ public class Pessoa implements PessoaInterface {
 	public Pessoa() {
 		endereco = new Endereco();
 	}
+	
+	@Override
+	public void setEndereco(Endereco enderco) {
+		this.endereco = endereco;
+	};
+	@Override
+	public Endereco getEndereco() {
+		return endereco;
+	};
 	
 	
 	@Override
@@ -48,14 +57,19 @@ public class Pessoa implements PessoaInterface {
 		return CPF;
 	};
 	
-	@Override
-	public void setDataNascimento(Date DataNascimento) {
-		this.DataNascimento = DataNascimento;
+	public void setDataNascimento(Date date) {
+		this.DataNascimento = date;
 	};
+	
+	public java.sql.Date getDataNascimento() {
+		return (java.sql.Date) DataNascimento;
+	}
+
 	@Override
-	public Date getDataNascimento() {
-		return DataNascimento;
-	};
+	public void setDataNascimento(java.sql.Date DataNascimento) {
+		// TODO Auto-generated method stub
+		
+	}
 
 
 
