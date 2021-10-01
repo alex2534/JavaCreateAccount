@@ -1,0 +1,96 @@
+package conectar;
+//Classes necessarias para uso de Banco de dados
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+//Inicio da classe de conexao
+
+public class Conectar {
+	
+	public static String status = "Não conectou...";
+	
+//Método Construtor de classe 
+	
+	public Conectar() {
+		
+	}
+	
+//Método de Conexão
+	public static java.sql.Connection getConectar(){
+		
+		Connection connection = null; //atributo do tipo Connection
+	
+	try {
+		//Carregando o JDBC Driver padrao
+		
+		String driverName = "com.mysql.jdbc.Driver";
+		Class.forName(driverName);
+		
+//Configurando a nossa conexão com um banco de dados
+		
+		String serverName = "localhost";//caminho do servidor do BD
+		
+		String mydatabase = "java_crud"; //nome do banco de dados
+		
+		String url = "jdbc:mysql://" +serverName+ "/" +mydatabase;
+		
+		String username = "debian-sys-maint"; //nome de um usuario do BD
+		
+		String password = "password"; // senha de acesso
+		
+		connection = DriverManager.getConnection(url, username, password);
+		
+		
+		//Testa a conexao
+		
+		if(connection != null) {
+			
+			status = ("STATUS--->Conectado com sucesso!");
+		}else {
+			status = ("STATUS--->Não foi possivel realizar conexaão!");
+		}
+		
+		
+		return connection;
+		
+		
+		} catch(ClassNotFoundException e) {//Driver não encontrado
+			
+			System.out.print("O driver expecificado nao foi encontrado. ");
+			
+			return null;
+			
+		}catch (SQLException e) {
+//Não conseguindo se conctar ao banco
+			
+			System.out.print("Não foi possivel conectar ao Banco de Dados. ");
+			
+			return null;
+		}
+	
+	}
+	
+//Método que retorna o status da sua conexão
+	public static String statusConection() {
+		return status;
+	}
+	
+//Método que fecha sua conexão
+	public static boolean FecharConexao() {
+		try {
+			Conectar.getConectar().close();
+			return true;
+		}catch(SQLException e) {
+			return false;
+		}
+	}
+//Método que reinicia sua conexao
+	public static java.sql.Connection reiniciConnection(){
+		FecharConexao();
+		
+		return Conectar.getConectar();
+	}
+	
+}
