@@ -7,7 +7,7 @@ import endereco.Endereco;
 public interface PessoaInterface {
 	
 	public void setNome(String Nome);
-	public String getNOme();
+	public String getNome();
 	
 	public void setSobreNome(String SobreNome);
 	public String getSobreNome();

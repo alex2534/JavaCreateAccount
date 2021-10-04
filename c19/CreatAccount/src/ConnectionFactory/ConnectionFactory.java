@@ -1,19 +1,19 @@
-package conectar;
-//Classes necessarias para uso de Banco de dados
+package ConnectionFactory;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-//Inicio da classe de conexao
 
-public class Conectar {
+public class ConnectionFactory {
 
 	// Método responsavel por estabelecer a conexão com o banco mysql
+	
 
-	public static Connection conectar() {
+	public static Connection creatConnection() {
 
-		java.sql.Connection conexao = null;
+		java.sql.Connection Conectar = null;
 
 		// A linha abaixo CHAMA o driver
 		String driver = "com.mysql.cj.jdbc.Driver";
@@ -26,8 +26,8 @@ public class Conectar {
 		//Estabelecendo a conexão com o banco
 		try {
 			Class.forName(driver);
-			conexao = DriverManager.getConnection(url, user, password);
-			return conexao;
+			Conectar = DriverManager.getConnection(url, user, password);
+			return Conectar;
 		} catch (Exception e) {
 			System.out.println(e);
 			return null;

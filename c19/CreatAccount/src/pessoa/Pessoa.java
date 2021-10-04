@@ -10,6 +10,7 @@ public class Pessoa implements PessoaInterface {
 	
 	Endereco endereco;
 	
+	private int id;
 	private String Nome;
 	private String SobreNome;
 	private String CPF;
@@ -17,6 +18,14 @@ public class Pessoa implements PessoaInterface {
 	
 	public Pessoa() {
 		endereco = new Endereco();
+	}
+	
+	public void setID(int ID) {
+		this.id = ID;
+	}
+	
+	public int getID() {
+		return id;
 	}
 	
 	@Override
@@ -30,7 +39,7 @@ public class Pessoa implements PessoaInterface {
 	
 	
 	@Override
-	public String getNOme() {
+	public String getNome() {
 		return Nome;
 	};
 	@Override

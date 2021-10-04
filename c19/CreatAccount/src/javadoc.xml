@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="/home/ti/Área de Trabalho/jdbc/jar_files/mysql-connector-java-8.0.26.jar:/home/ti/Área de Trabalho/jdbc/mysql-connector-java-8.0.26.zip:/home/ti/Área de Trabalho/jdbc/jar_files/protobuf-java-3.11.4.jar" destdir="../doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="endereco,dao,conectar,pessoa,account,cpfVerifica" source="11" sourcepath="." splitindex="true" use="true" version="true">
+            <link href="https://docs.oracle.com/en/java/javase/11/docs/api/"/>
+        </javadoc>
+    </target>
+</project>
